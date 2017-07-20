@@ -136,7 +136,7 @@ article time {
     z-index: 9999;
     pointer-events: auto;
   }
-  
+
   .ribbon a,
   .ribbon a:hover {
     /* Set the text properties */
@@ -158,7 +158,7 @@ article time {
     border-color: #fff;
     border-color: rgba(255, 255, 255, 0.7);
   }
-  
+
   .ribbon-wrapper {
     width: 150px;
     height: 150px;
@@ -168,33 +168,33 @@ article time {
     z-index: 9999;
     pointer-events: none;
   }
-  
+
   .ribbon-wrapper.fixed {
     position: fixed;
   }
-  
+
   .ribbon-wrapper.left {
     left: 0;
   }
-  
+
   .ribbon-wrapper.right {
     right: 0;
   }
-  
+
   .ribbon-wrapper.left-bottom {
     position: fixed;
     top: inherit;
     bottom: 0;
     left: 0;
   }
-  
+
   .ribbon-wrapper.right-bottom {
     position: fixed;
     top: inherit;
     bottom: 0;
     right: 0;
   }
-  
+
   .ribbon-wrapper.right .ribbon {
     top: 42px;
     right: -43px;
@@ -204,7 +204,7 @@ article time {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
+
   .ribbon-wrapper.left .ribbon {
     top: 42px;
     left: -43px;
@@ -214,7 +214,7 @@ article time {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  
+
   .ribbon-wrapper.left-bottom .ribbon {
     top: 80px;
     left: -43px;
@@ -224,7 +224,7 @@ article time {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
+
   .ribbon-wrapper.right-bottom .ribbon {
     top: 80px;
     right: -43px;
@@ -237,7 +237,11 @@ article time {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {  }
+@media (max-width: 767px) {
+ .ribbon-wrapper {
+   display: none; 
+ }
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {   }
